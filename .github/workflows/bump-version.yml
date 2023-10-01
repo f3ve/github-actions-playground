@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Bump version
+name: ⬆️ Bump version
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -41,10 +41,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
-        cache: 'npm'
-        
-    - name: Install pnpm
-      run: npm i -g pnpm@latest
+        cache: 'pnpm'
 
     - name: Install packages
       run: pnpm i
